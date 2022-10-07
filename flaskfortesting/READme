@@ -1,5 +1,3 @@
 I created a webapp that allows a user to create account. Database allows users to be read and updates. 
 I used Flask and SQLite. 
 I uploaded the code onto Github and used Jenkins to automatically build and deploy a container that runs my webapp. 
-I faced some complications to get this working and I did not test the recipe app on jenkins as it was not complete. Instead I tested a simple Hello World app I created called app.py. 
-
