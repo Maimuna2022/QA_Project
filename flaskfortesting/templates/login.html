@@ -1,0 +1,35 @@
+
+<html>
+<body style="background-color:lightyellow">
+     <div class='form'>
+       <form method ='POST' action=''>
+         {{ form.hidden_tag() }}
+         <br>
+         {{ form.username.label }}
+         {{ form.username }}
+         <br>
+         {% if form.username.errors %}
+          <div class='error'>
+             {% for error in form.username.errors %}
+                {{ error }}
+             {% endfor %}
+          </div>
+         {% endif %}
+         <br>
+         {{ form.password.label }}
+         {{ form.password }}
+         <br>
+         {{ form.submit }}
+       </form>
+       {{ message }}
+     </div>
+
+</html>
+
+
+{% extends "standard.html" %}{% block title %}{% endblock %}
+
+
+
+
+
